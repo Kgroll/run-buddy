@@ -32,7 +32,6 @@
   }
   
   .header nav {
-    
     margin: 7px 0;
   }
   
@@ -78,7 +77,6 @@
   
   .section {
     padding: 60px;
-    background-color: #024e76;
   }
   
   /* Hero Style Start */
@@ -90,7 +88,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  /* Hero Style End */
+  
   
   .hero-cta {
     width: 35%;
@@ -146,8 +144,31 @@
     font-size: 16px;
   }
   
+/* Hero Style End */
 
+/*Section title start*/
   
+.section-title {
+  font-size: 55px;
+  color: #024e76;    
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+/*section style ends*/
+
+/*what we do styles*/
+
   .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -156,6 +177,10 @@
     margin: 0 auto;
     text-align: center;
   }
+  /*what we do ends*/
+
+  /*what you do starts*/
+
   .steps {
     background: #fce138;
   }
@@ -172,6 +197,21 @@
     justify-content: space-between;
     
   }
+
+  .step h3 {
+    color: #024e76;
+    font-size: 46px;
+    flex: 1 30%;
+  }
+
+  .step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
   .step-img {
     flex: 1 12%;
     margin-right: 20px;
@@ -183,20 +223,7 @@
   .step-text {
     flex: 12;
   }
-
-  .step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
  
-  
-  .step h3 {
-    color: #024e76;
-    font-size: 46px;
-    flex: 1 30%;
-  }
   
   .step-text p {
     color: #39a6b2;
@@ -209,26 +236,17 @@
     color: #024e76;
   }
  
- 
-  .section-title {
-    font-size: 55px;
-    color: #024e76;    
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-  }
+ /*what you do ends*/
+
+ /*trainer style starts*/
   
-  .primary-border {
-    border-color: #fce138;
-  }
-  
-  .secondary-border {
-    border-color: #39a6b2;
-  }
-  
-  
+ .trainers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
   
   .trainer {
     
@@ -239,13 +257,7 @@
     
   }
   
-  .trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  
   .trainer img {
     width: 100%;
     
@@ -257,7 +269,7 @@
   }
   
   .trainer-bio h3 {
-    font-size: 32px;
+    font-size: 28px;
     
   }
   
@@ -268,17 +280,12 @@
   }
   
   .trainer-bio p {
-    font-size: 17px;
-    
+    font-size: 17px;    
   }
   
-  .text-left {
-    text-align: left;
-  }
+  /*trainer style ends*/
+
   
-  .text-right {
-    text-align: right;
-  }
   
   /* REACH OUT STYLES START */
   .contact {
@@ -287,7 +294,6 @@
   
   .contact h2 {
     color: #fce138;
-    text-align: center;
     
   }
   
@@ -322,14 +328,6 @@
     font-style: normal;
   }
   
-  .contact-info a {
-    color: #fce138;
-  }
-  
-  .flex-row {
-    display: flex;
-  }
-  
   .contact-form input, .contact-form textarea {
     border: 1px solid #024e76;
     display: block;
@@ -350,5 +348,27 @@
     padding: 15px 0;
     font-size: 16px;
   }
-  /* REACH OUT STYLES END */
+
+  .contact-info a {
+    color: #fce138;
+  }
+  /* REACH OUT STYLES END */ 
+
+/*Utilities*/
+
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+
+  .flex-row {
+    display: flex;
+  }
+  
+ 
+
+ 
   
