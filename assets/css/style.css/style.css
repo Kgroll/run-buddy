@@ -78,6 +78,7 @@
   
   .section {
     padding: 60px;
+    background-color: #024e76;
   }
   
   /* Hero Style Start */
@@ -287,6 +288,8 @@
   
   .contact h2 {
     color: #fce138;
+    text-align: center;
+    
   }
   
   .contact-info iframe {
