@@ -24,6 +24,7 @@
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    display: inline;
     
   }
   .header a {
@@ -33,6 +34,7 @@
   
   .header nav {
     margin: 7px 0;
+   
   }
   
   .head nav ul {
@@ -370,27 +372,46 @@
   }
   
  /*media query for smaller desktop screens and smaller*/
+/*this will be applied on any screen smaller than 980px*/
 
  @media screen and (max-width: 980px) {
-   header h1 a {
-     /*this will be applied on any screen smaller than 980px*/
-     color: tomato;
-   }
+  .header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  .header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .header nav ul {
+    margin-top: 20px; 
+    width: 100%;
+    justify-content: center;
+
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }   
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  .hero-cta {
+    text-align: center;
+  }
  } 
 /*tablets and smaller*/
  /*screens between 768px and 575px*/
 @media screen and (max-width: 768px and 575px) {
-  .header h1 {
-
-  font-size: 80px;
-  }
+  
 }
 
 /*phones and smaller*/
 @media screen and (max-width: 575px) {
-  .header h1 {
-    font-size: 100px;
-  }
+  
 }
  
   
