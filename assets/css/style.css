@@ -434,7 +434,7 @@
 /*this will be applied on any screen smaller than 980px*/
 
  @media screen and (max-width: 980px) {
-  .header {
+  .header  {
     padding-bottom: 0;
     justify-content: center;
   }
@@ -470,7 +470,7 @@
   .contact-info iframe {
     flex: 1 100%;
   }
-  }
+ }
 
 
 /*tablets and smaller*/
