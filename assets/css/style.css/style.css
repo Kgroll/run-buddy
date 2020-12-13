@@ -47,6 +47,7 @@
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+    
   }
   
   .footer {
@@ -253,7 +254,7 @@
     margin: 20px;
     background: #024e76;
     color: #fce138;
-    flex: 1
+    flex: 1;
     
   }
   
@@ -320,8 +321,7 @@
     font-size: 32px;
   }
   
-  .contact-info p,
-  .contact-info address {
+  .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
