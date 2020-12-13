@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
   }
   
   .body {
@@ -24,7 +24,7 @@
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
+   
     
   }
   .header a {
@@ -197,18 +197,41 @@
   justify-content: center;
   text-align: center;
 }
+/*specific match*/
+.service-grid-item.basic {
+  grid-column: 2 / span 1;
+}
+.service-grid-item.both {
+  grid-column: 2 / span 2;
+}
+.service-grid-item.cancel {
+  writing-mode: vertical-rl;
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+  font-size: 1.25;
+  font-weight: bold;
+}
+  
   /*section style ends*/
 
 /*what we do styles*/
+
 
   .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
-    font-size: 20px;
     margin: 0 auto;
+    font-size: 20px;
     text-align: center;
   }
+  
+  
+  
+  
   /*what we do ends*/
 
   /*what you do starts*/
@@ -466,7 +489,28 @@
   .step-text {
     flex: 100%;
   }
+.service-grid-container {
+  grid-template-columns: 1fr 1fr;
 }
+.service-grid-item.basic {
+  grid-column: 1;
+}
+.service-grid-item.both {
+  grid-column: 1 / -1;
+  }
+.service-grid-item.cancel {
+    transform: none;
+    writing-mode: unset;
+    grid-column: 1 / -1;
+    grid-row: -1;
+  }
+
+
+
+
+
+}
+
 
 /*phones and smaller*/
 @media screen and (max-width: 575px) {
