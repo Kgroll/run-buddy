@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
   }
   
   .body {
@@ -24,6 +24,7 @@
     font-size: 36px;
     color: #fce138;
     margin: 0;
+   
     
   }
   .header a {
@@ -33,9 +34,10 @@
   
   .header nav {
     margin: 7px 0;
+   
   }
   
-  .head nav ul {
+  .header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,6 +49,7 @@
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    
   }
   
   .footer {
@@ -166,18 +169,69 @@
 .secondary-border {
   border-color: #39a6b2;
 }
-/*section style ends*/
+
+.services {
+  background: #fce138;
+}
+.service-grid-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.service-grid-container {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 4fr);
+  grid-template-rows: repeat(5, 1fr) 2fr;
+  background: lightyellow;
+  width: 80%;
+  display: grid;
+  border: 2px solid #024e76;
+  color: #024e76;
+  font-size: 1.2rem;
+}
+.service-grid-item {
+  padding: 15px 0;
+  border: 2px solid #024e76;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/*specific match*/
+.service-grid-item.basic {
+  grid-column: 2 / span 1;
+}
+.service-grid-item.both {
+  grid-column: 2 / span 2;
+}
+.service-grid-item.cancel {
+  writing-mode: vertical-rl;
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+  font-size: 1.25;
+  font-weight: bold;
+}
+  
+  /*section style ends*/
 
 /*what we do styles*/
+
 
   .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
-    font-size: 20px;
     margin: 0 auto;
+    font-size: 20px;
     text-align: center;
   }
+  
+  
+  
+  
   /*what we do ends*/
 
   /*what you do starts*/
@@ -254,7 +308,7 @@
     margin: 20px;
     background: #024e76;
     color: #fce138;
-    flex: 1
+    flex: 1;
     
   }
   
@@ -321,8 +375,7 @@
     font-size: 32px;
   }
   
-  .contact-info p,
-  .contact-info address {
+  .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
@@ -369,12 +422,128 @@
     display: flex;
   }
   
+<<<<<<< HEAD:assets/css/style.css
  /*desktops and a bit smaller screens*/
 
 @media screen and (max-width: 980px) {
 
 
 
+=======
+ /*media query for smaller desktop screens and smaller*/
+/*this will be applied on any screen smaller than 980px*/
+
+ @media screen and (max-width: 980px) {
+  .header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  .header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .header nav ul {
+    margin-top: 20px; 
+    width: 100%;
+    justify-content: center;
+
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }   
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  .hero-cta {
+    text-align: center;
+  }
+  .section-title {
+    width: 80%;
+  }
+  .trainer {
+    flex: 0 70%;
+    }
+  .contact-info iframe {
+    flex: 1 100%;
+  }
+  }
+
+
+/*tablets and smaller*/
+ /*screens between 768px and 575px*/
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 30px 15px;
+  }
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .step-text {
+    flex: 100%;
+  }
+.service-grid-container {
+  grid-template-columns: 1fr 1fr;
+}
+.service-grid-item.basic {
+  grid-column: 1;
+}
+.service-grid-item.both {
+  grid-column: 1 / -1;
+  }
+.service-grid-item.cancel {
+    transform: none;
+    writing-mode: unset;
+    grid-column: 1 / -1;
+    grid-row: -1;
+  }
+
+
+
+
+
+}
+
+
+/*phones and smaller*/
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+  .section-title {
+    width: 95%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .trainer {
+    flex: 0 100%;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .contact-info > * {
+    float: 0 100%;
+  }
+.contact-form {
+  order: 3;
+}
+>>>>>>> develop:assets/css/style.css/style.css
 }
  
 /*tablets and smaller screens*/
