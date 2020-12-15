@@ -1,14 +1,17 @@
-*:root {
+* box-sizing border-box {
+   
+  margin: 0;
+  padding: 0;   
+}
+
+
+:root {
   --primary-color:#fce138;
   --secondary-color: #024e76;
   --tertiary-color: #39a6b2;
 } 
 
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;   
-  }
+
   
   .body {
     /* more on this crazy alphanumerical value in a minute! */
@@ -37,7 +40,7 @@
   .header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: var(--primary-color)
+    color: var(--primary-color);
     margin: 0;
    
     
@@ -306,7 +309,7 @@
 
   .intro p {
     line-height: 1.7;
-    color: var(--tertiary-color)
+    color: var(--tertiary-color);
     width: 80%;
     margin: 0 auto;
     font-size: 20px;
@@ -370,7 +373,7 @@
  
   
   .step-text p {
-    color: var(--tertiary-color)
+    color: var(--tertiary-color);
     font-size: 18px;
   }
   
