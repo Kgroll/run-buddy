@@ -1,10 +1,8 @@
-*{
-  box-sizing: border-box;
+* box-sizing border-box {
+   
   margin: 0;
   padding: 0;   
 }
-
-
 
 
 :root {
@@ -676,13 +674,8 @@
   }
 .trainer-img h3, .trainer-img h4, .trainerimg::after {
   display: inline;
+  } 
 }
-
-
-
-
-}
-
 
 /*phones and smaller*/
 @media screen and (max-width: 575px) {
